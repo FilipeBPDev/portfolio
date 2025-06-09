@@ -1,0 +1,26 @@
+/* src/styles/variables.css */
+
+:root {
+  --font-main: 'Poppins', sans-serif;
+
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-primary: #005eff; /* azul royal */
+  --color-accent: #7e00c9; /* roxo elegante */
+}
+
+[data-theme='dark'] {
+  --color-bg: #111111;
+  --color-text: #ffffff;
+  --color-primary: #005eff;
+  --color-accent: #b266ff;
+}
+
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
