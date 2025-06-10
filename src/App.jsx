@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import SocialSidebar from './components/SocialSidebar/SocialSidebar'
+import ContactButton from './components/ContactButton/ContactButton'
 import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/Home/Home.jsx'
 import About from './pages/About/About'
@@ -13,6 +14,7 @@ function App() {
     <>
       <Navbar />
       <SocialSidebar/>
+      <ContactButton/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />

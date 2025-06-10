@@ -1,0 +1,29 @@
+/* src/components/ContactButton/ContactButton.module.css */
+
+.contactButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.contactButton:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.contactButton svg {
+  width: 20px;
+  height: 20px;
+}
