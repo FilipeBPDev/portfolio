@@ -3,17 +3,17 @@
 :root {
   --font-main: 'Poppins', sans-serif;
 
-  --color-bg: #ffffff;
-  --color-text: #111111;
-  --color-primary: #005eff; /* azul royal */
-  --color-accent: #7e00c9; /* roxo elegante */
+  --color-bg: #f5f0e8f0;
+  --color-text: #2b2b2b;
+  --color-primary: #4a7c59; /* azul royal */
+  --color-accent: #6E5847; /* roxo elegante */
 }
 
 [data-theme='dark'] {
-  --color-bg: #111111;
-  --color-text: #ffffff;
-  --color-primary: #005eff;
-  --color-accent: #b266ff;
+  --color-bg: #2b2b2b;
+  --color-text: #f7f9fc;
+  --color-primary: #4a7c59;
+  --color-accent: #6E5847;;
 }
 
 
