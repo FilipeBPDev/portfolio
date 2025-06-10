@@ -110,13 +110,13 @@
 
 /* Definições de tema */
 [data-theme='dark'] {
-  --navbar-bg: #ffffff;
+  --navbar-bg: #f5f0e8f0;
   --navbar-border: rgba(0, 0, 0, 0.1);
-  --navbar-text: #333333;
+  --navbar-text: #2b2b2b;
 }
 
 [data-theme='light'] {
-  --navbar-bg: #333333;
+  --navbar-bg: #2b2b2b;
   --navbar-border: rgba(255, 255, 255, 0.1);
-  --navbar-text: #ffffff;
+  --navbar-text: #f5f0e8f0;
 }
