@@ -1,9 +1,12 @@
 .container {
   background-color: var(--color-bg);
   color: var(--color-text);
-  padding: 4rem 1rem;
   display: flex;
   justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  padding: 0 1rem; 
+  box-sizing: border-box;
 }
 
 .hero {

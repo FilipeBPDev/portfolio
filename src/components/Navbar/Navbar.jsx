@@ -31,25 +31,25 @@ export default function Navbar() {
       <div className={styles.rightSection}>
         <div className={styles.navLinks}>
           <NavLink 
-            to="/" 
+            to="#home" 
             className={({ isActive }) => isActive ? styles.active : undefined}
           >
             Home
           </NavLink>
           <NavLink 
-            to="/sobre" 
+            to="#sobre" 
             className={({ isActive }) => isActive ? styles.active : undefined}
           >
             Sobre
           </NavLink>
           <NavLink 
-            to="/projetos" 
+            to="#projetos" 
             className={({ isActive }) => isActive ? styles.active : undefined}
           >
             Projetos
           </NavLink>
           <NavLink 
-            to="/contato" 
+            to="#contato" 
             className={({ isActive }) => isActive ? styles.active : undefined}
           >
             Contato

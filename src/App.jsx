@@ -1,29 +1,49 @@
-// src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
-import SocialSidebar from './components/SocialSidebar/SocialSidebar'
-import ContactButton from './components/ContactButton/ContactButton'
-import Footer from './components/Footer/Footer.jsx'
-import Home from './pages/Home/Home.jsx'
-import About from './pages/About/About'
-import Projects from './pages/Projects/Projects'
-import Contact from './pages/Contact/Contact'
+// App.jsx - Híbrido com rolagem + suporte a rotas futuras
+import { useEffect } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import SocialSidebar from './components/SocialSidebar/SocialSidebar';
+import ContactButton from './components/ContactButton/ContactButton';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
+import Contact from './pages/Contact/Contact';
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <SocialSidebar/>
-      <ContactButton/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<About />} />
-        <Route path="/projetos" element={<Projects />} />
-        <Route path="/contato" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </>
-  )
+useEffect(() => {
+const hash = window.location.hash;
+if (hash) {
+const section = document.querySelector(hash);
+if (section) {
+setTimeout(() => {
+section.scrollIntoView({ behavior: 'smooth' });
+}, 200);
+}
+}
+}, []);
+
+return (
+<>
+    <Navbar />
+    <SocialSidebar />
+    <ContactButton />
+
+    <div id="home" className="section">
+        <Home />
+    </div>
+    <div id="sobre" className="section">
+        <About />
+    </div>
+    <div id="projetos" className="section">
+        <Projects />
+    </div>
+    <div id="contato" className="section">
+        <Contact />
+    </div>
+
+    <Footer />
+</>
+)
 }
 
-export default App
+export default App;
