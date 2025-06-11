@@ -25,7 +25,7 @@ return (
                     código eficiente + design intuitivo para produtos que entregam
                 </strong>
             </p>
-            <a href="#sobre" className={styles.button}>
+            <a href="/sobre" className={styles.button}>
                 Sobre mim <span className={styles.arrow}>↓</span>
             </a>
         </div>
