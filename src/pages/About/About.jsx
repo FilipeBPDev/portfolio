@@ -26,7 +26,7 @@ export default function Sobre() {
 
   
   return (
-    <main className={styles.container}>
+    <main id="sobre" className={`${styles.container} ${styles.sobreSection}`}>
       <div className={styles.wrapper}>
         {/* Coluna Esquerda */}
         <section className={styles.leftBox}>

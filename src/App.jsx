@@ -28,16 +28,16 @@ return (
     <SocialSidebar />
     <ContactButton />
 
-    <div id="home" className="section">
+    <div id="#home" className="section">
         <Home />
     </div>
-    <div id="sobre" className="section">
+    <div id="#sobre" className="section">
         <About />
     </div>
-    <div id="projetos" className="section">
+    <div id="#projetos" className="section">
         <Projects />
     </div>
-    <div id="contato" className="section">
+    <div id="#contato" className="section">
         <Contact />
     </div>
 

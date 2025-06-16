@@ -4,8 +4,7 @@ import styles from './Home.module.css';
 export default function Home() {
 
 return (
-<main className={styles.container}>
-    {/* Hero Section */}
+<main id="home" className={styles.container}>
     <section className={styles.hero}>
         <div className={styles.heroBox}>
             <h1>

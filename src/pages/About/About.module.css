@@ -1,3 +1,6 @@
+.sobreSection {
+  scroll-margin-top: 120px;
+}
 .container {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -20,6 +23,7 @@
   max-width: 1200px;
   width: 100%;
   flex-wrap: wrap;
+  margin-top: 90px;
 }
 
 .leftBox {
