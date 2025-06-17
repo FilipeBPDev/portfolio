@@ -39,3 +39,89 @@
   width: 20px;
   height: 20px;
 }
+
+.toggleButton {
+  display: none;
+}
+
+/*Responsivo*/
+
+@media (max-width: 900px) {
+  .sidebar {
+    top: auto;
+    bottom: 2rem;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .toggleButton {
+    display: flex;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .sidebar ul {
+    display: none;
+  }
+
+  .sidebar.open ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    background-color: var(--color-primary);
+    padding: 0rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    animation: fadeInUp 0.3s ease forwards;
+  }
+
+  .sidebar li {
+    margin: 0.4rem 0;
+  }
+
+  .sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar a:hover {
+    background-color: var(--color-accent);
+  }
+
+  .sidebar svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
