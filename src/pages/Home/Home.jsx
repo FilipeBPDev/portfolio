@@ -1,16 +1,22 @@
 import Typewriter from 'typewriter-effect';
 import styles from './Home.module.css';
+import { motion } from 'framer-motion'; 
 
 export default function Home() {
 
 return (
 <main id="home" className={styles.container}>
     <section className={styles.hero}>
-        <div className={styles.heroBox}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+         transition={{ duration: 0.8, ease: 'easeOut' }}
+          className={styles.heroBox}
+          >           
             <h1>
               <Typewriter
                 options={{
-                  strings: ['Olá, meu nome é Filipe Batista', 'Dev web, apaixonado por tecnologia.'],
+                  strings: ['Olá, meu nome é Filipe Batista', 'Desenvolvedor apaixonado por tecnologia.'],
                   autoStart: true,
                   loop: true,
                   cursor: '<span style="color: var(--color-primary)">|</span>'
@@ -18,16 +24,21 @@ return (
               />
             </h1>
             <p>
-                Desenvolvedor orientado a resultados com 
+                Orientado a resultados com 
                 <br />
                 <strong>
                     código eficiente + design intuitivo para produtos que entregam
                 </strong>
             </p>
-            <a href="/sobre" className={styles.button}>
-                Sobre mim <span className={styles.arrow}>↓</span>
-            </a>
-        </div>
+            <motion.a
+              href="/sobre"
+              className={styles.button}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Sobre mim <span className={styles.arrow}>↓</span>
+            </motion.a>
+        </motion.div>
     </section>
 </main>
 )

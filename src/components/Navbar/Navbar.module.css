@@ -35,7 +35,7 @@
 .leftSection {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 10rem;
 }
 
 .profilePhoto {
@@ -126,6 +126,10 @@
   .mobileToggle {
     display: block;
   }
+  
+  .leftSection {
+    gap: 1rem;
+  }
 
   .rightSection {
     position: absolute;
@@ -159,6 +163,6 @@
   }
 
   .themeToggle {
-    align-self: flex-start;
+    align-self: flex-end;
   }
 }

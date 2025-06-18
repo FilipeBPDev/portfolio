@@ -97,7 +97,7 @@ export default function Navbar() {
         </div>
 
         <button onClick={toggleTheme} className={styles.themeToggle}>
-          Alternar Tema
+          Tema
         </button>
       </div>
     </nav>
