@@ -2,18 +2,18 @@
   background-color: var(--color-bg);
   color: var(--color-text);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;    /* centraliza o grid verticalmente */
+  align-items: center;        /* centraliza o conteúdo horizontalmente */
   flex-direction: column;
-  padding: 2rem 1rem;
   min-height: 100vh;
+  padding: 2rem 1rem;
   box-sizing: border-box;
 }
 
 .projectSection {
   max-width: 1100px;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .title {
@@ -26,8 +26,11 @@
 .grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 85%;
+  margin-top: 60px;
+
+      /* alinha os cards ao centro */
 }
 
 .card {
