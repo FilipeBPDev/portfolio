@@ -1,0 +1,24 @@
+POST http://localhost:8000/send-email.php
+Content-Type: application/json
+
+{
+  "nome": "Filipe Teste",
+  "email": "filipe@example.com",
+  "telefone": "11999999999",
+  "linkedin": "https://linkedin.com/in/filipe",
+  "mensagem": "Olá! Essa é uma mensagem teste.",
+  "gRecaptchaToken": "TOKEN_FAKE_OU_REAL"
+}
+###
+
+POST http://localhost:8000/email/send-email.php
+Content-Type: application/json
+
+{
+  "nome": "Filipe Teste",
+  "email": "filipe@example.com",
+  "telefone": "11999999999",
+  "linkedin": "https://linkedin.com/in/filipe",
+  "mensagem": "Olá! Essa é uma mensagem teste.",
+  "gRecaptchaToken": "TOKEN_FAKE_OU_REAL"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "filipe/portfolio-backend",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
