@@ -21,6 +21,7 @@
   margin: 0;
   font-size: 0.9rem;
   opacity: 0.8;
+  color: var(--footer-text);
 }
 
 .socialLinks {
@@ -42,13 +43,13 @@
 
 /* Definições de tema - consistentes com o navbar */
 [data-theme='dark'] {
-  --footer-bg: #f5f5f5;
-  --footer-text: #333333;
+  --footer-bg: #ececfb;
+  --footer-text: #2b2b2b;
   --footer-border: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='light'] {
-  --footer-bg: #222222;
+  --footer-bg: #181728;
   --footer-text: #f5f5f5;
   --footer-border: rgba(255, 255, 255, 0.1);
 }

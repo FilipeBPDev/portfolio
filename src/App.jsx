@@ -1,49 +1,49 @@
 // App.jsx - Híbrido com rolagem + suporte a rotas futuras
-import { useEffect } from 'react';
-import Navbar from './components/Navbar/Navbar';
-import SocialSidebar from './components/SocialSidebar/SocialSidebar';
-import ContactButton from './components/ContactButton/ContactButton';
-import Footer from './components/Footer/Footer';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Projects from './pages/Projects/Projects';
-import Contact from './pages/Contact/Contact';
+import { useEffect } from "react";
+import Navbar from "./components/Navbar/Navbar";
+import SocialSidebar from "./components/SocialSidebar/SocialSidebar";
+import ContactButton from "./components/ContactButton/ContactButton";
+import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
-useEffect(() => {
-const hash = window.location.hash;
-if (hash) {
-const section = document.querySelector(hash);
-if (section) {
-setTimeout(() => {
-section.scrollIntoView({ behavior: 'smooth' });
-}, 200);
-}
-}
-}, []);
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const section = document.querySelector(hash);
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 200);
+      }
+    }
+  }, []);
 
-return (
-<>
-    <Navbar />
-    <SocialSidebar />
-    <ContactButton />
+  return (
+    <>
+      <Navbar />
+      <SocialSidebar />
+      <ContactButton />
 
-    <div id="#home" className="section">
+      <div className="section">
         <Home />
-    </div>
-    <div id="#sobre" className="section">
+      </div>
+      <div className="section">
         <About />
-    </div>
-    <div id="#projetos" className="section">
+      </div>
+      <div className="section">
         <Projects />
-    </div>
-    <div id="#contato" className="section">
+      </div>
+      <div className="section">
         <Contact />
-    </div>
+      </div>
 
-    <Footer />
-</>
-)
+      <Footer />
+    </>
+  );
 }
 
 export default App;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import styles from "./Navbar.module.css";
+import profileImg from "../../assets/img/profile/profile.png";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
@@ -55,16 +56,21 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.leftSection}>
         <div className={styles.profilePhoto}>
-          <img src="/caminho/para/sua-foto.jpg" alt="Foto de perfil" />
+          <img src={profileImg} alt="Foto de perfil" />
         </div>
         <div className={styles.name}>Filipe Batista</div>
       </div>
 
-      <div className={styles.mobileToggle} onClick={() => setMenuOpen(!menuOpen)}>
+      <div
+        className={styles.mobileToggle}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
       </div>
 
-      <div className={`${styles.rightSection} ${menuOpen ? styles.showMenu : ""}`}>
+      <div
+        className={`${styles.rightSection} ${menuOpen ? styles.showMenu : ""}`}
+      >
         <div className={styles.navLinks}>
           <a
             href="#home"
